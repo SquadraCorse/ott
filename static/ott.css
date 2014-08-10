@@ -170,11 +170,11 @@
 }
 
 .ott-labels i { display: block; font-style: normal; }
-.ott-label-a { width: 11%; padding-left: 40px; text-align: right; }
+.ott-label-a { width: 11%; padding-left: 40px; text-align: right; padding-top: 6px; }
 .ott-label-b { width: 20%; text-align: center; color: #9D9D9D; font-size: 90%; }
-.ott-label-c { width: 14%; }
-.ott-label-d { width: 35%; text-overflow:ellipsis;white-space: nowrap;}
-/* .ott-label-e { width: 20%; } */
+.ott-label-c { width: 14%; padding-top: 6px; }
+.ott-label-d { width: 35%; text-overflow:ellipsis; white-space: nowrap; padding-top: 6px; }
+.ott-label-e { max-height: 42px; font-size: 90%; line-height: 1.2; }
 
 
 .ott-sort { max-width: 120px; }
@@ -260,7 +260,14 @@ dt.ott-flight-data--full { width: 100%; }
 
     .ott-fare { 
         padding-bottom: 10px;
+        line-height: 1.2;
     }
+
+    .ott-label-b { font-size: 80%; }
+    .ott-label-d { width: 45%; font-size: 90%; padding-top: 0; }
+    .ott-label-e { width: 45%; text-overflow:ellipsis; white-space: nowrap; font-size: 82%; }
+    .ott-label-e i { display: inline-block; }
+
     .ott-labels,
     .ott-days {
         width: 100%;
@@ -272,6 +279,8 @@ dt.ott-flight-data--full { width: 100%; }
         border-top: 1px solid #4abeed;
         border-bottom: 1px solid #4abeed;
     }
+
+
 
     dl.ott-flight-data {
         width: 100%;
@@ -292,8 +301,9 @@ dt.ott-flight-data--full { width: 100%; }
     .ott-label-a { width: 20%; padding-left: 0; }
     .ott-label-b { width: 20%; }
     .ott-label-c { width: 20%; }
-    .ott-label-d { width: 40%; }
-    .ott-labels .ott-label-e,
+    .ott-label-d,
+    .ott-label-e { width: 40%; }
+
     .js-ott-form-print { display: none; }
 
     .ott-fare-selected {
