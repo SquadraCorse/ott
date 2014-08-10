@@ -38,6 +38,10 @@
     margin: 0;
     padding: 0 1px 1px;
 }
+.ott-legend { padding-top: 4px; font-size: 12px; text-align: right; }
+
+
+
 
 .ott-wrapper {
     max-width: 768px;
