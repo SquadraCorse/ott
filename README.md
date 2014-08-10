@@ -1,7 +1,7 @@
 # OTT: Open Time Table
 >De dienstregeling voor KLM, AIR FRANCE, Delta Air Lines en SkyTeam-partners.
 
-[klm](http://www.klm.com/travel/nl_nl/prepare_for_travel/up_to_date/timetable/timetable_result.htm?lang=en&country=nl)
+[KLM](http://www.klm.com/travel/nl_nl/prepare_for_travel/up_to_date/timetable/timetable_result.htm?lang=en&country=nl)
 
 ### Demonstratie voor responsive setup.
 
