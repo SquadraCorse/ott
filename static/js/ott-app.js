@@ -251,7 +251,18 @@ define([
 
         // DO SEARCH
         SearchInstance.on('ott.search', function (e, arg) {
+
+            // UPDATE URL (WHEN USER REFRESHES)
+            if (history && history.pushState) {
+                var url = window.location.pathname;
+                var filename = url.substring(url.lastIndexOf('/')+1);
+                filename += '?' + $.param(arg);
+                history.pushState({}, '', filename);
+            }
+
+            // LOAD OUR ITINERARY INFORMATION
             _loadFlights($.param(arg));
+
         });
 
     };
