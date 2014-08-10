@@ -145,7 +145,7 @@ define([
             if (itemNumber) {
                 var item = headersReverse[itemNumber];
                 if (item) { 
-                    pos = $(item).offset().top;
+                    pos = $(item).offset().top + 1;
                 }
 
             }
