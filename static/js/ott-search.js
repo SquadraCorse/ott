@@ -115,14 +115,18 @@ define([
         });
 
 
-        // DO SEARCH
-        var _searchFlights = function () {
-
+        var _updateValues = function () {
             // Update our values
             Values.outbound = departure;
             Values.inbound = arrival;
             Values.origin = origin;
             Values.destination = destination;
+        };
+
+        // DO SEARCH
+        var _searchFlights = function () {
+
+            _updateValues();
 
             // parameters for new flights
             var param = {
@@ -187,7 +191,7 @@ define([
             }
         });
 
-
+        _updateValues();
         _checkInput();
 
 

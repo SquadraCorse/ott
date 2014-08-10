@@ -8,7 +8,7 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-
+.ott-title { padding-bottom: 0; }
 .ott-search-form {
     margin: 20px 0;
     padding-bottom: 20px;
