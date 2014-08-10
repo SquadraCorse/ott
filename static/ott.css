@@ -35,10 +35,11 @@
     color: #fff;
     font-size: 9px;
     font-weight: normal;
-    margin: 0;
+    margin: 0 0 0 2px;
     padding: 0 1px 1px;
+    display: inline-block;
 }
-.ott-legend { padding-top: 4px; font-size: 12px; text-align: right; }
+.ott-legend { padding: 4px 6px 0 0; font-size: 12px; text-align: right; }
 
 
 
@@ -302,9 +303,9 @@ dt.ott-flight-data--full { width: 100%; }
 @media screen and (max-width: 480px) {
 
     .ott-title { font-size: 28px; }
-    .ott-label-a { width: 20%; padding-left: 0; }
+    .ott-label-a { width: 18%; padding-left: 0; }
     .ott-label-b { width: 20%; }
-    .ott-label-c { width: 20%; }
+    .ott-label-c { width: 22%; }
     .ott-label-d,
     .ott-label-e { width: 40%; }
 
@@ -318,11 +319,13 @@ dt.ott-flight-data--full { width: 100%; }
     .ott-form-arrival {
         margin-bottom: 10px;
     }
+    .ott-flight { padding-right: 0; }
     .ott-collapse { top: 6px; }
     .ott-day {
         min-height: 34px;
         padding-top: 4px;
     }
+    .ott-fare .ott-days { padding-right: 40px; }
     .ott-connection-header .ott-day {
         min-height: 40px;
         padding-top: 4px;
