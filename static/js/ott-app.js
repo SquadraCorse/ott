@@ -57,7 +57,7 @@ define([
 
         // IF WE HAVE A LIST CHANGE OUR DOM
         if (list.length) {
-            $flights.empty().append(list.join());
+            $flights.empty().append(list.join(' '));
         }
 
     };
