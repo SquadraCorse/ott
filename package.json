@@ -1,0 +1,32 @@
+{
+    "name": "OTT-frontend",
+    "description": "Open Time Table widget for KLM",
+
+    "version": "0.0.1",
+
+    "homepage": "http://www.klm.com",
+
+    "author": {
+        "name": "Maarten van Oudenniel",
+        "url": "http://www.oudenniel.nl"
+    },
+
+    "repository" : { 
+        "type" : "git",
+        "url" : "http://github.com/SquadraCorse"
+    },
+
+    "devDependencies": {
+        "grunt": "~0.4.5",
+        "time-grunt": "~0.3.2",
+        "load-grunt-config": "~0.10.0",
+        "grunt-contrib-clean": "0.5.x",
+        "grunt-contrib-compress" : "~0.9.1",
+        "grunt-contrib-copy": "~0.5.0",
+        "grunt-contrib-jshint": "~0.10.0",
+        "jshint-junit-reporter" : "~0.0.6",
+        "grunt-contrib-requirejs": "~0.4.4",
+        "grunt-contrib-uglify": "~0.5.0",
+        "grunt-contrib-watch": "~0.6.0"
+    }
+}

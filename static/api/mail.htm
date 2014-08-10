@@ -1,0 +1,73 @@
+<form id="ott-mailform" name="ott-mailform" data-url="http://www.klm.com/commercial/ott/mail.htm" class="g-forms g-forms-wide ott-mailform" novalidate="novalidate">
+	<input type="hidden" id="ott-language" name="lang" value="" />
+	<input type="hidden" id="ott-country" name="country" value="" />
+
+	<h1 class="g-h1 ott-title">Mail a friend service</h1>
+
+	<div class="g-notification g-notification-error js-g-forms-error-message g-forms-hidden">
+        <h2 class="g-h4">Please correct the highlighted fields.</h2>
+    </div>
+
+	<hr class="g-forms-ruler" />
+
+	<span class="g-forms-required-note"><b class="g-forms-required-sign">*</b> Marked fields are mandatory</span>
+
+		<fieldset class="g-forms-fieldset g-clear">
+
+	        <div class="g-forms-container g-clear">
+	            <label for="to[0]" class="g-forms-label">Naar e-mailadres <b class="g-forms-required-sign">*</b></label>
+	            <div class="g-forms-field">
+	                <input id="to[0]" name="to[0]" required data-rule-email="true" class="g-forms-text" type="text" aria-required="true">
+	            </div>
+	        </div>
+
+	        <div class="g-forms-container g-clear">
+	            <label for="name" class="g-forms-label">Uw naam <b class="g-forms-required-sign">*</b></label>
+	            <div class="g-forms-field">
+	                <input id="name" name="name" required data-rule-validchars="true" class="g-forms-text" type="text" aria-required="true">
+	            </div>
+	        </div>
+
+	        <div class="g-forms-container g-clear">
+	            <label for="from" class="g-forms-label">Uw e-mailadres <b class="g-forms-required-sign">*</b></label>
+	            <div class="g-forms-field">
+	                <input id="from" name="from" required data-rule-email="true" class="g-forms-text" type="text" aria-required="true">
+	            </div>
+	        </div>
+
+
+			<div class="g-forms-container g-clear">
+	            <label for="input25" class="g-forms-label">Bericht (optioneel):</label>
+	            <div class="g-forms-field">
+	                <textarea id="message" name="message" class="g-forms-text"></textarea>
+	            </div>
+	        </div>
+
+	        <div class="g-forms-container g-clear">
+	            <label for="code" class="g-forms-label">Vul de hieronder getoonde tekens in <b class="g-forms-required-sign">*</b></label>
+	            <div class="g-forms-field">
+	                <input id="code" name="code" required data-rule-minlength="4" class="g-forms-text" type="text" aria-required="true">
+	            </div>
+	        </div>
+
+	        <div class="g-forms-container g-clear">
+	            <div class="g-forms-field">
+	                <img id="ott-captcha-img" class="ott-captcha-img" width="179" height="42"/> 
+					<b id="ott-captcha-refresh" class="ott-captcha-refresh g-klmicon" title="refresh">&#xe003;</b>
+	            </div>
+	        </div>
+
+	    </fieldset>
+
+
+	<hr class="g-forms-ruler" />
+
+	<div class="g-forms-button-group g-clear">
+
+        <button class="g-btn g-btn-primary g-forms-next" type="submit">
+            <span>Versturen <b class="g-klmicon" aria-hidden="true">&gt;</b></span>
+        </button>
+
+    </div>
+
+</form>

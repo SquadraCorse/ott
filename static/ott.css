@@ -1,0 +1,355 @@
+.ott-hidden { display: none; }
+.ott-disabled,
+.ott-disabled:visited {
+    color: #ccc;
+}
+.ott-icon { 
+    font-size: 90%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.ott-search-form {
+    margin: 20px 0;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #c2deea;
+}
+.ott-form-departure { margin-bottom: 10px; }
+
+
+.ott-actions {
+    padding: 0 2px;
+    font-size: 80%;
+    margin-bottom: 40px;
+}
+.ott-actions--data {
+    float: left;
+}
+.ott-actions--share {
+    float: right;
+}
+
+
+
+
+.ott-wrapper {
+    max-width: 768px;
+    margin-top: 20px;
+    padding:0;
+}
+.ott-wrapper,
+.ott-sticky-scroll { font-size: 16px; }
+.ott-sticky-scroll {
+    display: none;
+    position: fixed; 
+    left: 0;
+    width: 100%;
+    box-shadow: 0 -8px 11px 9px rgba(0,0,0,0.4);
+    background-color: #fff;
+}
+.ott-sticky-scroll .ott-connection-header { border-bottom: 1px; max-width: 768px; }
+
+.ott-connection {
+    margin-bottom: 20px;
+}
+
+.ott-connection-header {
+    padding-top: 6px;
+    background-color: #fff;
+    border-bottom: 2px solid #4abeed;
+}
+.ott-connection-header .ott-connection-title,
+.ott-connection-header p,
+.ott-connection-header .ott-sort { margin-left: 2px; }
+
+.ott-connection-header .ott-labels {
+    color: #00A1DE;
+}
+.ott-connection-header .ott-day {
+    border-top: 1px solid #4abeed;
+    padding-top: 6px;
+    line-height: 1.2;
+}
+.ott-connection-header .ott-day--selected {
+    border-top-width: 2px;
+    padding-top: 5px;
+}
+.ott-connection-header .ott-labels {
+    padding: 0;
+}
+
+.ott-connection-wrapper { }
+
+.ott-connection-title,
+.ott-flight-title { color: #005b82; }
+
+.ott-connection-title {
+    font-size: 18px;
+}
+
+
+.ott-fare {
+    border-bottom: 1px solid #DDEDF3;
+    position: relative;
+}
+
+.ott-collapse {
+    position: absolute;
+    top: 12px;
+    left: 2px;
+    width: 33px;
+    height: 33px;
+    border: 0;
+    background: url('ott-arrows.png') no-repeat 0 0;
+    outline: none;
+    cursor: pointer;
+}
+.ott-fare-selected .ott-collapse {
+    background-position: 0 -146px;
+}
+
+.ott-labels { 
+    font-size: 14px;
+    width: 68%;
+    float: left;
+    padding: 8px 0;
+}
+.ott-days {
+    width: 32%;
+    float: left;
+    border-left: 1px solid #4abeed;
+    box-sizing: border-box;
+    position: relative;
+}
+.ott-day {
+    width: 14.286%;
+    float: left;
+    border-right: 1px solid #4abeed;
+    text-align: center;
+    display: block;
+    padding-top: 18px;
+    min-height: 58px; /* LOOK AT PADDING ON OTT-LABELS */
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.ott-day--selected {
+    border-right-width: 2px; 
+    border-left: 1px solid #4abeed;
+}
+.ott-day i {
+    display: block;
+    font-style: normal;
+}    
+
+
+.ott-nav {
+    display: block;
+    width: 20px;
+    height: 58px;
+    background-color: #f6fafc;
+    color: #005b82;
+    border: 0;
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+}
+.ott-nav-prev { left: -21px; }
+.ott-nav-next { right: -20px; }
+
+.ott-labels span {
+    display: block;
+    float: left;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+
+.ott-labels i { display: block; font-style: normal; }
+.ott-label-a { width: 11%; padding-left: 40px; text-align: right; }
+.ott-label-b { width: 20%; text-align: center; color: #9D9D9D; font-size: 90%; }
+.ott-label-c { width: 11%; }
+.ott-label-d { width: 38%; }
+/* .ott-label-e { width: 20%; } */
+
+
+.ott-sort { max-width: 120px; }
+.ott-header-a { width: 31%; padding-left: 40px; }
+.ott-header-c { width: 11%; }
+.ott-header-d { width: 38%; }
+
+
+
+
+/* FLIGHT INFO */
+.ott-flight-info {
+    display: none;
+}
+#ott-app.g-loading-large,
+.ott-wrapper.g-loading-large,
+.ott-flight-info.g-loading-large {
+    height: 60px;
+    background-position: center center;
+}
+
+.ott-fare-selected,
+.ott-fare-selected .ott-flight-info {
+    background-color: #f6fafc; /* #fff7d9; */
+}
+.ott-fare-selected .ott-flight-info {
+    display: block;
+    border-top: 1px solid #ddedf3; /* #e8ddc0; */
+    border-bottom: 1px solid #ddedf3;
+    margin-top: -1px;
+    padding: 10px 10px 10px 40px;
+
+}
+
+.ott-flight-title { font-size: 16px; }
+.ott-flight-transfer { padding: 10px 0; margin-bottom: 10px; }
+.ott-flight-traveltime { padding-top: 10px; margin-bottom: 0; }
+
+dl.ott-flight-data {
+    width: 280px;
+    padding: 0 10px 8px 0;
+    float: left;
+    font-size: 13px;
+}
+.ott-flight-data dt {
+    float: left;
+    width: 50%;
+    clear: left;
+}
+dt.ott-flight-data--full { width: 100%; }
+.ott-flight-data dd {
+    float: left;
+    width: 50%;
+}
+
+
+
+
+
+@media (max-width: 788px) {
+    .ott-connection,
+    .ott-sticky-scroll .ott-connection-header { padding-right: 20px; }
+}
+
+@media screen and (max-width: 700px) {
+    .ott-wrapper,
+    .ott-sticky-scroll,
+    .ott-connection-title,
+    .ott-flight-title { font-size: 14px; }
+
+    .ott-sticky-scroll {
+        display: block;
+    }
+    .ott-connection,
+    .ott-sticky-scroll .ott-connection-header { padding-right: 0; }
+
+    .ott-connection-header p,
+    .ott-connection-header .ott-labels { display: none; }
+    .ott-connection-header .ott-connection-title { margin-bottom: 10px; padding: 0 10px; }
+
+    .ott-connection-wrapper,
+    .ott-flight { padding: 0 40px; }
+
+    .ott-fare { 
+        padding-bottom: 10px;
+    }
+    .ott-labels,
+    .ott-days {
+        width: 100%;
+    }
+
+    .ott-days { margin-bottom: -2px; }
+
+    .ott-day {
+        border-top: 1px solid #4abeed;
+        border-bottom: 1px solid #4abeed;
+    }
+
+    dl.ott-flight-data {
+        width: 100%;
+        padding: 0 0 10px 0;
+        float: none;
+    }
+    .ott-nav {
+        height: 56px;
+    }
+
+    .ott-sticky-scroll .g-grid--span12 { margin-bottom: 0; }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .ott-title { font-size: 28px; }
+    .ott-label-a { width: 20%; padding-left: 0; }
+    .ott-label-b { width: 20%; }
+    .ott-label-c { width: 20%; }
+    .ott-label-d { width: 40%; }
+    .ott-labels .ott-label-e,
+    .js-ott-form-print { display: none; }
+
+    .ott-fare-selected {
+        padding-bottom: 0;
+    }
+    .ott-fare-selected .ott-flight-info { padding-left: 10px; margin-top: 5px;}
+
+    .ott-form-arrival {
+        margin-bottom: 10px;
+    }
+    .ott-collapse { top: 6px; }
+    .ott-day {
+        min-height: 34px;
+        padding-top: 4px;
+    }
+    .ott-connection-header .ott-day {
+        min-height: 40px;
+        padding-top: 4px;
+    }
+    .ott-connection-header .ott-day--selected { padding-top: 3px; }
+    .ott-nav {
+        height: 38px;
+    }
+    .ott-sticky-scroll .ott-days { margin-bottom: 0; }
+
+    .ott-actions--data,
+    .ott-actions--share {
+        float: none;
+    }
+}
+
+
+@media print {
+    .ott-wrapper { width: 100%; max-width: inherit; }
+    .ott-connection { padding-right: 0; }
+    #ott-app,
+    button.ott-collapse,
+    button.ott-nav,
+    .ott-actions { display: none; }
+
+    .ott-sticky-scroll { display: none!important; }
+
+    .ott-connection-header .ott-labels { visibility: hidden; }
+
+    .ott-fare { line-height: 1.3; }
+    .ott-label-a { padding-left: 0; }
+    .ott-label-d { white-space: inherit; }
+    .ott-labels { padding: 0; font-size: 13px; }
+    .ott-day { min-height: 30px; padding-top: 6px; }
+
+}
+
+
+
+
+/* mail a friend form */
+.ott-mailform { margin-bottom: 40px; }
+.ott-captcha-img { float: left; }
+.ott-captcha-refresh { float: left; color: #c2deea; font-size: 20px; margin-left: 30px; cursor: pointer; }
+
+/* booking link */
+.ott-booking { margin-bottom: 40px;  }
+
+

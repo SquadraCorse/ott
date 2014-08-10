@@ -1,0 +1,57 @@
+<!-- OTT: SEARCH FORM -->
+<h1 class="g-h1 ott-title"><b aria-hidden="true" class="g-klmicon ott-icon">&#x1f554;</b> Dienstregeling</h1>
+<h2 class="g-h4">De dienstregeling voor KLM, AIR FRANCE, Delta Air Lines en SkyTeam-partners</h2>
+
+<form action="#" class="g-forms g-forms-wide ott-search-form js-g-init" novalidate="novalidate"  data-path="app/ott-app">
+
+    <div class="g-forms-container g-clear">
+        <label for="ott-form-origin" class="g-forms-label">From</label>
+        <div class="g-forms-field">
+            <input name="ott-form-origin" id="ott-form-origin" class="g-forms-text ott-form-origin g-forms-locationpicker g-locationpicker--origin" type="text" aria-required="true"/>
+        </div>
+    </div>
+
+    <div class="g-forms-container g-clear">
+        <label for="ott-form-destination" class="g-forms-label">To</label>
+        <div class="g-forms-field">
+            <input name="ott-form-destination" id="ott-form-destination" class="g-forms-text ott-form-destination g-forms-locationpicker g-locationpicker--destination" type="text" aria-required="true"/>
+        </div>
+    </div>
+
+    <div class="g-forms-container g-clear">
+        <label class="g-forms-label g-forms-label-radios">When</label>
+        <div class="g-forms-field">
+            <div class="g-forms-group g-clear">
+
+                <input type="text" name="ott-form-departure" id="ott-form-departure" class="g-forms-text ott-form-departure g-forms-datepicker" aria-required="true" readonly="readonly"/> 
+
+                <input type="text" name="ott-form-arrival" id="ott-form-arrival" class="g-forms-text ott-form-arrival g-forms-datepicker" aria-required="true" readonly="readonly"/> 
+
+            </div>
+        </div>
+    </div>
+
+    <div class="g-forms-container g-clear">
+        <div class="g-forms-field">
+            <div class="g-forms-group g-clear">
+                <span class="g-forms-field-label">
+                    <input type="radio" name="ott-form-type" value="return" id="ott-form-type1" class="g-forms-radio" aria-required="true" checked="checked"/> 
+                    <label class="g-forms-label-text" for="ott-form-type1">Retourvlucht</label>
+                </span>
+                <span class="g-forms-field-label">
+                    <input type="radio" name="ott-form-type" value="oneway" id="ott-form-type2" class="g-forms-radio" aria-required="true" /> 
+                    <label class="g-forms-label-text" for="ott-form-type2">Enkele reis</label>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <hr class="g-forms-ruler" />
+
+    <div class="g-forms-button-group g-clear">
+        <button class="g-btn g-btn-primary g-btn-disabled g-forms-next js-ott-show-flights" type="submit">
+            <span>Show flights <b class="g-klmicon" aria-hidden="true">&gt;</b></span>
+        </button>
+    </div>
+
+</form>

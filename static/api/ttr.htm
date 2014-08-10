@@ -1,0 +1,528 @@
+<div class="ott-actions g-clear">
+
+
+    <ul class="ott-actions--data">
+        <li class="g-forms-field-label">
+            <input type="checkbox" name="ott-form-skyteam" value="true" id="ott-form-skyteam" class="g-forms-checkbox js-ott-form-skyteam"> <label class="g-forms-label-text" for="ott-form-skyteam">toon vluchten die door andere SkyTeam-partners worden uitgevoerd</label>
+        </li>
+
+        <li class="g-forms-field-label">
+            <input type="checkbox" name="ott-form-direct" value="true" id="ott-form-direct" class="g-forms-checkbox js-ott-form-direct"> <label class="g-forms-label-text" for="ott-form-direct">toon alleen directe vluchten</label>
+        </li>
+    </ul>
+
+    <ul class="ott-actions--share">
+        <li><a href="#" class="js-ott-form-print"><b class="g-klmicon" aria-hidden="true">&#xe60c;</b> Afdrukken</a></li>
+        <li><a href="#" class="js-ott-form-mail ott-disabled"><b class="g-klmicon" aria-hidden="true">&#xe01a;</b> Mail a friend-service</a></li>
+    </ul>
+
+</div>
+
+
+<div class="ott-connection" data-connection="outbound">
+    <div class="ott-connection-header g-clear">
+
+        <h2 class="ott-connection-title"><strong>Amsterdam</strong>, Schiphol (AMS) - <strong>London</strong>, Heathrow Airport (LHR)</h2>
+        <p>Heenvluchten in de week van Donderdag 14 Augustus 2014</p>
+
+        <div class="ott-connection-wrapper g-clear">
+            <div class="ott-labels">
+
+                <select class="g-forms-selectbox ott-sort js-ott-sort" data-type="outbound">
+                    <option data-type="DEPARTURE">Departure</option>
+                    <option data-type="ARRIVAL">Arrival</option>
+                    <option data-type="DURATION">Duration</option>
+                    <option data-type="TRANSFER">Transfers</option>
+                    <option data-type="AIRLINE">Airline</option>
+                    <option data-type="FLIGHT">Flight</option>
+                </select>
+
+            </div>
+            <div class="ott-days">
+                <span class="ott-day" data-day="0" data-date="2015-08-11"><i>Ma</i> 11</span>
+                <span class="ott-day" data-day="1" data-date="2015-08-12"><i>Di</i> 12</span>
+                <span class="ott-day" data-day="2" data-date="2015-08-13"><i>Wo</i> 13</span>
+                <span class="ott-day" data-day="3" data-date="2015-08-14"><i>Do</i> 14</span>
+                <span class="ott-day" data-day="4" data-date="2015-08-15"><i>Vr</i> 15</span>
+                <span class="ott-day ott-day--selected" data-day="5" data-date="2015-08-16"><i>Za</i> 16</span>
+                <span class="ott-day" data-day="6" data-date="2015-08-17"><i>Zo</i> 17</span>
+
+                <button data-json="org=AMS&amp;dest=JFK&amp;depdate=2014-08-08&amp;retdate=2014-08-16&amp;dp=yyyy-MM-dd&amp;sky=N&amp;drct=N&amp;country=nl&amp;lang=nl" class="ott-nav ott-nav-prev g-klmicon">&#x3c;</button>
+
+                <button data-json="org=AMS&amp;dest=JFK&amp;depdate=2014-08-22&amp;retdate=2014-08-23&amp;dp=yyyy-MM-dd&amp;sky=N&amp;drct=N&amp;country=nl&amp;lang=nl" class="ott-nav ott-nav-next g-klmicon">&#x3e;</button>
+            </div>
+        </div>
+
+    </div>
+
+
+        <ul class="ott-fares" id="ott-outbound">
+            <li class="ott-fare" data-json="org=AMS&dest=JFK&depdate=2014-08-11&flts=KL1107,KL6003&dchg=0,0&sky=N&country=nl&lang=nl&dir=out" data-id="KL1699.06:50_KL6127.11:25">
+                <div class="ott-flight g-clear">
+                    <div class="ott-labels">
+                        <span class="ott-label-a">07:15</span>
+                        <span class="ott-label-b"><i>1h25</i> 1 transfer</span>
+                        <span class="ott-label-c">08:40</span>
+                        <span class="ott-label-d">KLM, Delta Air Lines</span>
+                        <span class="ott-label-e"><i>KL1107</i> <i>KL6003</i></span>
+                    </div>
+                    <div class="ott-days">
+                        <span class="ott-day"><input value="0" type="radio" name="ott-departure-flights" class="ott-flight-radio"/></span>
+                        <span class="ott-day"><input value="1" type="radio" name="ott-departure-flights" class="ott-flight-radio" /></span>
+                        <span class="ott-day"><input value="2" type="radio" name="ott-departure-flights" class="ott-flight-radio" /></span>
+                        <span class="ott-day"><input value="3" type="radio" name="ott-departure-flights" class="ott-flight-radio" /></span>
+                        <span class="ott-day"><input value="4" type="radio" name="ott-departure-flights" class="ott-flight-radio" /></span>
+                        <span class="ott-day ott-day--selected"><input value="5"  type="radio" name="ott-departure-flights" class="ott-flight-radio" /></span>
+                        <span class="ott-day"><input value="6" type="radio" name="ott-departure-flights" class="ott-flight-radio" /></span>
+                    </div>
+
+                </div>
+                <div class="ott-flight-info"></div>
+                <button class="ott-collapse"></button>
+
+            </li>
+            <li class="ott-fare" data-json="org=AMS&dest=JFK&depdate=2014-08-11&flts=KL1107,KL6003&dchg=0,0&sky=N&country=nl&lang=nl&dir=out" data-id="KL1699.06:50_KL6127.11:26">
+                <div class="ott-flight g-clear">
+
+                    <div class="ott-labels">
+                        <span class="ott-label-a">08:26</span>
+                        <span class="ott-label-b"><i>1h35</i> Direct</span>
+                        <span class="ott-label-c">10:20</span>
+                        <span class="ott-label-d">KLM, Air France, Delta Airlines</span>
+                        <span class="ott-label-e"><i>KL1107</i></span>
+                    </div>
+                    <div class="ott-days">
+                        <span class="ott-day"><input value="0" type="radio" name="ott-departure-flights" class="ott-flight-radio"/></span>
+                        <span class="ott-day"><input value="1" type="radio" name="ott-departure-flights" class="ott-flight-radio" /></span>
+                        <span class="ott-day"><input value="2" type="radio" name="ott-departure-flights" class="ott-flight-radio" /></span>
+                        <span class="ott-day"><input value="3" type="radio" name="ott-departure-flights" class="ott-flight-radio" /></span>
+                        <span class="ott-day"><input value="4" type="radio" name="ott-departure-flights" class="ott-flight-radio" /></span>
+                        <span class="ott-day ott-day--selected"><input value="5"  type="radio" name="ott-departure-flights" class="ott-flight-radio" /></span>
+                        <span class="ott-day"><input value="6" type="radio" name="ott-departure-flights" class="ott-flight-radio" /></span>
+                    </div>
+
+                </div>
+                <div class="ott-flight-info"></div>
+                <button class="ott-collapse"></button>
+
+            </li>
+            <li class="ott-fare" data-json="org=AMS&dest=JFK&depdate=2014-08-11&flts=KL1107,KL6003&dchg=0,0&sky=N&country=nl&lang=nl&dir=out" data-id="KL1699.06:50_KL6127.11:27">
+                <div class="ott-flight g-clear">
+
+                    <div class="ott-labels">
+                        <span class="ott-label-a">08:27</span>
+                        <span class="ott-label-b"><i>1h35</i> Direct</span>
+                        <span class="ott-label-c">10:20</span>
+                        <span class="ott-label-d">KLM</span>
+                        <span class="ott-label-e"><i>KL1107</i></span>
+                    </div>
+                    <div class="ott-days">
+                        <span class="ott-day"><input value="0" type="radio" name="ott-departure-flights" class="ott-flight-radio"/></span>
+                        <span class="ott-day"><input value="1" type="radio" name="ott-departure-flights" class="ott-flight-radio" /></span>
+                        <span class="ott-day"><input value="2" type="radio" name="ott-departure-flights" class="ott-flight-radio" /></span>
+                        <span class="ott-day"><input value="3" type="radio" name="ott-departure-flights" class="ott-flight-radio" /></span>
+                        <span class="ott-day"><input value="4" type="radio" name="ott-departure-flights" class="ott-flight-radio" /></span>
+                        <span class="ott-day ott-day--selected"><input value="5"  type="radio" name="ott-departure-flights" class="ott-flight-radio" /></span>
+                        <span class="ott-day"><input value="6" type="radio" name="ott-departure-flights" class="ott-flight-radio" /></span>
+                    </div>
+
+                </div>
+                <div class="ott-flight-info"></div>
+                <button class="ott-collapse"></button>
+
+            </li>
+            <li class="ott-fare" data-json="org=AMS&dest=JFK&depdate=2014-08-11&flts=KL1107,KL6003&dchg=0,0&sky=N&country=nl&lang=nl&dir=out" data-id="KL1699.06:50_KL6127.11:28">
+                <div class="ott-flight g-clear">
+
+                    <div class="ott-labels">
+                        <span class="ott-label-a">08:28</span>
+                        <span class="ott-label-b"><i>1h35</i> Direct</span>
+                        <span class="ott-label-c">10:20</span>
+                        <span class="ott-label-d">KLM</span>
+                        <span class="ott-label-e"><i>KL1107</i></span>
+                    </div>
+                    <div class="ott-days">
+                        <span class="ott-day"><input value="0" type="radio" name="ott-departure-flights" class="ott-flight-radio"/></span>
+                        <span class="ott-day"><input value="1" type="radio" name="ott-departure-flights" class="ott-flight-radio" /></span>
+                        <span class="ott-day"><input value="2" type="radio" name="ott-departure-flights" class="ott-flight-radio" /></span>
+                        <span class="ott-day"><input value="3" type="radio" name="ott-departure-flights" class="ott-flight-radio" /></span>
+                        <span class="ott-day"><input value="4" type="radio" name="ott-departure-flights" class="ott-flight-radio" /></span>
+                        <span class="ott-day ott-day--selected"><input value="5"  type="radio" name="ott-departure-flights" class="ott-flight-radio" /></span>
+                        <span class="ott-day"><input value="6" type="radio" name="ott-departure-flights" class="ott-flight-radio" /></span>
+                    </div>
+
+                </div>
+                <div class="ott-flight-info"></div>
+                <button class="ott-collapse"></button>
+
+            </li>
+            <li class="ott-fare" data-json="org=AMS&dest=JFK&depdate=2014-08-11&flts=KL1107,KL6003&dchg=0,0&sky=N&country=nl&lang=nl&dir=out" data-id="KL1699.06:50_KL6127.11:29">
+                <div class="ott-flight g-clear">
+
+                    <div class="ott-labels">
+                        <span class="ott-label-a">08:29</span>
+                        <span class="ott-label-b"><i>1h35</i> Direct</span>
+                        <span class="ott-label-c">10:20</span>
+                        <span class="ott-label-d">KLM</span>
+                        <span class="ott-label-e"><i>KL1107</i></span>
+                    </div>
+                    <div class="ott-days">
+                        <span class="ott-day"><input value="0" type="radio" name="ott-departure-flights" class="ott-flight-radio"/></span>
+                        <span class="ott-day"><input value="1" type="radio" name="ott-departure-flights" class="ott-flight-radio" /></span>
+                        <span class="ott-day"><input value="2" type="radio" name="ott-departure-flights" class="ott-flight-radio" /></span>
+                        <span class="ott-day"><input value="3" type="radio" name="ott-departure-flights" class="ott-flight-radio" /></span>
+                        <span class="ott-day"><input value="4" type="radio" name="ott-departure-flights" class="ott-flight-radio" /></span>
+                        <span class="ott-day ott-day--selected"><input value="5"  type="radio" name="ott-departure-flights" class="ott-flight-radio" /></span>
+                        <span class="ott-day"><input value="6" type="radio" name="ott-departure-flights" class="ott-flight-radio" /></span>
+                    </div>
+
+                </div>
+                <div class="ott-flight-info"></div>
+                <button class="ott-collapse"></button>
+
+            </li>
+            <li class="ott-fare" data-json="org=AMS&dest=JFK&depdate=2014-08-11&flts=KL1107,KL6003&dchg=0,0&sky=N&country=nl&lang=nl&dir=out" data-id="KL1699.06:50_KL6127.11:30">
+                <div class="ott-flight g-clear">
+
+                    <div class="ott-labels">
+                        <span class="ott-label-a">08:30</span>
+                        <span class="ott-label-b"><i>1h35</i> Direct</span>
+                        <span class="ott-label-c">10:20</span>
+                        <span class="ott-label-d">KLM</span>
+                        <span class="ott-label-e"><i>KL1107</i></span>
+                    </div>
+                    <div class="ott-days">
+                        <span class="ott-day"><input value="0" type="radio" name="ott-departure-flights" class="ott-flight-radio"/></span>
+                        <span class="ott-day"><input value="1" type="radio" name="ott-departure-flights" class="ott-flight-radio" /></span>
+                        <span class="ott-day"><input value="2" type="radio" name="ott-departure-flights" class="ott-flight-radio" /></span>
+                        <span class="ott-day"><input value="3" type="radio" name="ott-departure-flights" class="ott-flight-radio" /></span>
+                        <span class="ott-day"><input value="4" type="radio" name="ott-departure-flights" class="ott-flight-radio" /></span>
+                        <span class="ott-day ott-day--selected"><input value="5"  type="radio" name="ott-departure-flights" class="ott-flight-radio" /></span>
+                        <span class="ott-day"><input value="6" type="radio" name="ott-departure-flights" class="ott-flight-radio" /></span>
+                    </div>
+
+                </div>
+                <div class="ott-flight-info"></div>
+                <button class="ott-collapse"></button>
+
+            </li>
+            <li class="ott-fare" data-json="org=AMS&dest=JFK&depdate=2014-08-11&flts=KL1107,KL6003&dchg=0,0&sky=N&country=nl&lang=nl&dir=out" data-id="KL1699.06:50_KL6127.11:31">
+                <div class="ott-flight g-clear">
+
+                    <div class="ott-labels">
+                        <span class="ott-label-a">08:31</span>
+                        <span class="ott-label-b"><i>1h35</i> Direct</span>
+                        <span class="ott-label-c">10:20</span>
+                        <span class="ott-label-d">KLM</span>
+                        <span class="ott-label-e"><i>KL1107</i></span>
+                    </div>
+                    <div class="ott-days">
+                        <span class="ott-day"><input value="0" type="radio" name="ott-departure-flights" class="ott-flight-radio"/></span>
+                        <span class="ott-day"><input value="1" type="radio" name="ott-departure-flights" class="ott-flight-radio" /></span>
+                        <span class="ott-day"><input value="2" type="radio" name="ott-departure-flights" class="ott-flight-radio" /></span>
+                        <span class="ott-day"><input value="3" type="radio" name="ott-departure-flights" class="ott-flight-radio" /></span>
+                        <span class="ott-day"><input value="4" type="radio" name="ott-departure-flights" class="ott-flight-radio" /></span>
+                        <span class="ott-day ott-day--selected"><input value="5"  type="radio" name="ott-departure-flights" class="ott-flight-radio" /></span>
+                        <span class="ott-day"><input value="6" type="radio" name="ott-departure-flights" class="ott-flight-radio" /></span>
+                    </div>
+
+                </div>
+                <div class="ott-flight-info"></div>
+                <button class="ott-collapse"></button>
+
+            </li>
+        </ul>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- NEW CONNECTION -->
+<div class="ott-connection" data-connection="inbound">
+    <div class="ott-connection-header g-clear">
+
+        <h2 class="ott-connection-title"><strong>London</strong>, Heathrow Airport (LHR) - <strong>Amsterdam</strong>, Schiphol (AMS)</h2>
+        <p>Heenvluchten in de week van Donderdag 21 Augustus 2014</p>
+
+        <div class="ott-connection-wrapper g-clear">
+            <div class="ott-labels">
+
+                <select class="g-forms-selectbox ott-sort js-ott-sort" data-type="inbound">
+                    <option data-type="DEPARTURE">Departure</option>
+                    <option data-type="ARRIVAL">Arrival</option>
+                    <option data-type="DURATION">Duration</option>
+                    <option data-type="TRANSFER">Transfers</option>
+                    <option data-type="AIRLINE">Airline</option>
+                    <option data-type="FLIGHT">Flight</option>
+                </select>
+
+            </div>
+            <div class="ott-days">
+                <span class="ott-day" data-day="0" data-date="2015-08-18"><i>Ma</i> 18</span>
+                <span class="ott-day" data-day="1" data-date="2015-08-19"><i>Di</i> 19</span>
+                <span class="ott-day" data-day="2" data-date="2015-08-20"><i>Wo</i> 20</span>
+                <span class="ott-day" data-day="3" data-date="2015-08-21"><i>Do</i> 21</span>
+                <span class="ott-day" data-day="4" data-date="2015-08-22"><i>Vr</i> 22</span>
+                <span class="ott-day ott-day--selected" data-day="5" data-date="2015-08-23"><i>Za</i> 23</span>
+                <span class="ott-day" data-day="6" data-date="2015-08-24"><i>Zo</i> 24</span>
+
+                <button data-json="org=AMS&amp;dest=JFK&amp;depdate=2014-08-08&amp;retdate=2014-08-16&amp;dp=yyyy-MM-dd&amp;sky=N&amp;drct=N&amp;country=nl&amp;lang=nl" class="ott-nav ott-nav-prev g-klmicon">&#x3c;</button>
+                <button data-json="org=AMS&amp;dest=JFK&amp;depdate=2014-08-22&amp;retdate=2014-08-23&amp;dp=yyyy-MM-dd&amp;sky=N&amp;drct=N&amp;country=nl&amp;lang=nl" class="ott-nav ott-nav-next g-klmicon">&#x3e;</button>
+            </div>
+        </div>
+
+    </div>
+
+
+        <ul class="ott-fares" id="ott-outbound">
+            <li class="ott-fare" data-json="org=AMS&dest=JFK&depdate=2014-08-11&flts=KL1107,KL6003&dchg=0,0&sky=N&country=nl&lang=nl&dir=out" data-id="KL1699.06:50_KL6127.11:25">
+                <div class="ott-flight g-clear">
+                    <div class="ott-labels">
+                        <span class="ott-label-a">07:15</span>
+                        <span class="ott-label-b"><i>1h25</i> 1 transfer</span>
+                        <span class="ott-label-c">08:40</span>
+                        <span class="ott-label-d">KLM, Delta Air Lines</span>
+                        <span class="ott-label-e"><i>KL1107</i> <i>KL6003</i></span>
+                    </div>
+                    <div class="ott-days">
+                        <span class="ott-day"><input value="0" type="radio" name="ott-departure-flights" class="ott-flight-radio"/></span>
+                        <span class="ott-day"><input value="1" type="radio" name="ott-departure-flights" class="ott-flight-radio" /></span>
+                        <span class="ott-day"><input value="2" type="radio" name="ott-departure-flights" class="ott-flight-radio" /></span>
+                        <span class="ott-day"><input value="3" type="radio" name="ott-departure-flights" class="ott-flight-radio" /></span>
+                        <span class="ott-day"><input value="4" type="radio" name="ott-departure-flights" class="ott-flight-radio" /></span>
+                        <span class="ott-day ott-day--selected"><input value="5"  type="radio" name="ott-departure-flights" class="ott-flight-radio" /></span>
+                        <span class="ott-day"><input value="6" type="radio" name="ott-departure-flights" class="ott-flight-radio" /></span>
+                    </div>
+
+                </div>
+                <div class="ott-flight-info"></div>
+                <button class="ott-collapse"></button>
+
+            </li>
+            <li class="ott-fare" data-json="org=AMS&dest=JFK&depdate=2014-08-11&flts=KL1107,KL6003&dchg=0,0&sky=N&country=nl&lang=nl&dir=out" data-id="KL1699.06:50_KL6127.11:26">
+                <div class="ott-flight g-clear">
+
+                    <div class="ott-labels">
+                        <span class="ott-label-a">08:26</span>
+                        <span class="ott-label-b"><i>1h35</i> Direct</span>
+                        <span class="ott-label-c">10:20</span>
+                        <span class="ott-label-d">KLM, Air France, Delta Airlines</span>
+                        <span class="ott-label-e"><i>KL1107</i></span>
+                    </div>
+                    <div class="ott-days">
+                        <span class="ott-day"><input value="0" type="radio" name="ott-departure-flights" class="ott-flight-radio"/></span>
+                        <span class="ott-day"><input value="1" type="radio" name="ott-departure-flights" class="ott-flight-radio" /></span>
+                        <span class="ott-day"><input value="2" type="radio" name="ott-departure-flights" class="ott-flight-radio" /></span>
+                        <span class="ott-day"><input value="3" type="radio" name="ott-departure-flights" class="ott-flight-radio" /></span>
+                        <span class="ott-day"><input value="4" type="radio" name="ott-departure-flights" class="ott-flight-radio" /></span>
+                        <span class="ott-day ott-day--selected"><input value="5"  type="radio" name="ott-departure-flights" class="ott-flight-radio" /></span>
+                        <span class="ott-day"><input value="6" type="radio" name="ott-departure-flights" class="ott-flight-radio" /></span>
+                    </div>
+
+                </div>
+                <div class="ott-flight-info"></div>
+                <button class="ott-collapse"></button>
+
+            </li>
+            <li class="ott-fare" data-json="org=AMS&dest=JFK&depdate=2014-08-11&flts=KL1107,KL6003&dchg=0,0&sky=N&country=nl&lang=nl&dir=out" data-id="KL1699.06:50_KL6127.11:27">
+                <div class="ott-flight g-clear">
+
+                    <div class="ott-labels">
+                        <span class="ott-label-a">08:27</span>
+                        <span class="ott-label-b"><i>1h35</i> Direct</span>
+                        <span class="ott-label-c">10:20</span>
+                        <span class="ott-label-d">KLM</span>
+                        <span class="ott-label-e"><i>KL1107</i></span>
+                    </div>
+                    <div class="ott-days">
+                        <span class="ott-day"><input value="0" type="radio" name="ott-departure-flights" class="ott-flight-radio"/></span>
+                        <span class="ott-day"><input value="1" type="radio" name="ott-departure-flights" class="ott-flight-radio" /></span>
+                        <span class="ott-day"><input value="2" type="radio" name="ott-departure-flights" class="ott-flight-radio" /></span>
+                        <span class="ott-day"><input value="3" type="radio" name="ott-departure-flights" class="ott-flight-radio" /></span>
+                        <span class="ott-day"><input value="4" type="radio" name="ott-departure-flights" class="ott-flight-radio" /></span>
+                        <span class="ott-day ott-day--selected"><input value="5"  type="radio" name="ott-departure-flights" class="ott-flight-radio" /></span>
+                        <span class="ott-day"><input value="6" type="radio" name="ott-departure-flights" class="ott-flight-radio" /></span>
+                    </div>
+
+                </div>
+                <div class="ott-flight-info"></div>
+                <button class="ott-collapse"></button>
+
+            </li>
+            <li class="ott-fare" data-json="org=AMS&dest=JFK&depdate=2014-08-11&flts=KL1107,KL6003&dchg=0,0&sky=N&country=nl&lang=nl&dir=out" data-id="KL1699.06:50_KL6127.11:28">
+                <div class="ott-flight g-clear">
+
+                    <div class="ott-labels">
+                        <span class="ott-label-a">08:28</span>
+                        <span class="ott-label-b"><i>1h35</i> Direct</span>
+                        <span class="ott-label-c">10:20</span>
+                        <span class="ott-label-d">KLM</span>
+                        <span class="ott-label-e"><i>KL1107</i></span>
+                    </div>
+                    <div class="ott-days">
+                        <span class="ott-day"><input value="0" type="radio" name="ott-departure-flights" class="ott-flight-radio"/></span>
+                        <span class="ott-day"><input value="1" type="radio" name="ott-departure-flights" class="ott-flight-radio" /></span>
+                        <span class="ott-day"><input value="2" type="radio" name="ott-departure-flights" class="ott-flight-radio" /></span>
+                        <span class="ott-day"><input value="3" type="radio" name="ott-departure-flights" class="ott-flight-radio" /></span>
+                        <span class="ott-day"><input value="4" type="radio" name="ott-departure-flights" class="ott-flight-radio" /></span>
+                        <span class="ott-day ott-day--selected"><input value="5"  type="radio" name="ott-departure-flights" class="ott-flight-radio" /></span>
+                        <span class="ott-day"><input value="6" type="radio" name="ott-departure-flights" class="ott-flight-radio" /></span>
+                    </div>
+
+                </div>
+                <div class="ott-flight-info"></div>
+                <button class="ott-collapse"></button>
+
+            </li>
+            <li class="ott-fare" data-json="org=AMS&dest=JFK&depdate=2014-08-11&flts=KL1107,KL6003&dchg=0,0&sky=N&country=nl&lang=nl&dir=out" data-id="KL1699.06:50_KL6127.11:29">
+                <div class="ott-flight g-clear">
+
+                    <div class="ott-labels">
+                        <span class="ott-label-a">08:29</span>
+                        <span class="ott-label-b"><i>1h35</i> Direct</span>
+                        <span class="ott-label-c">10:20</span>
+                        <span class="ott-label-d">KLM</span>
+                        <span class="ott-label-e"><i>KL1107</i></span>
+                    </div>
+                    <div class="ott-days">
+                        <span class="ott-day"><input value="0" type="radio" name="ott-departure-flights" class="ott-flight-radio"/></span>
+                        <span class="ott-day"><input value="1" type="radio" name="ott-departure-flights" class="ott-flight-radio" /></span>
+                        <span class="ott-day"><input value="2" type="radio" name="ott-departure-flights" class="ott-flight-radio" /></span>
+                        <span class="ott-day"><input value="3" type="radio" name="ott-departure-flights" class="ott-flight-radio" /></span>
+                        <span class="ott-day"><input value="4" type="radio" name="ott-departure-flights" class="ott-flight-radio" /></span>
+                        <span class="ott-day ott-day--selected"><input value="5"  type="radio" name="ott-departure-flights" class="ott-flight-radio" /></span>
+                        <span class="ott-day"><input value="6" type="radio" name="ott-departure-flights" class="ott-flight-radio" /></span>
+                    </div>
+
+                </div>
+                <div class="ott-flight-info"></div>
+                <button class="ott-collapse"></button>
+
+            </li>
+            <li class="ott-fare" data-json="org=AMS&dest=JFK&depdate=2014-08-11&flts=KL1107,KL6003&dchg=0,0&sky=N&country=nl&lang=nl&dir=out" data-id="KL1699.06:50_KL6127.11:30">
+                <div class="ott-flight g-clear">
+
+                    <div class="ott-labels">
+                        <span class="ott-label-a">08:30</span>
+                        <span class="ott-label-b"><i>1h35</i> Direct</span>
+                        <span class="ott-label-c">10:20</span>
+                        <span class="ott-label-d">KLM</span>
+                        <span class="ott-label-e"><i>KL1107</i></span>
+                    </div>
+                    <div class="ott-days">
+                        <span class="ott-day"><input value="0" type="radio" name="ott-departure-flights" class="ott-flight-radio"/></span>
+                        <span class="ott-day"><input value="1" type="radio" name="ott-departure-flights" class="ott-flight-radio" /></span>
+                        <span class="ott-day"><input value="2" type="radio" name="ott-departure-flights" class="ott-flight-radio" /></span>
+                        <span class="ott-day"><input value="3" type="radio" name="ott-departure-flights" class="ott-flight-radio" /></span>
+                        <span class="ott-day"><input value="4" type="radio" name="ott-departure-flights" class="ott-flight-radio" /></span>
+                        <span class="ott-day ott-day--selected"><input value="5"  type="radio" name="ott-departure-flights" class="ott-flight-radio" /></span>
+                        <span class="ott-day"><input value="6" type="radio" name="ott-departure-flights" class="ott-flight-radio" /></span>
+                    </div>
+
+                </div>
+                <div class="ott-flight-info"></div>
+                <button class="ott-collapse"></button>
+
+            </li>
+            <li class="ott-fare" data-json="org=AMS&dest=JFK&depdate=2014-08-11&flts=KL1107,KL6003&dchg=0,0&sky=N&country=nl&lang=nl&dir=out" data-id="KL1699.06:50_KL6127.11:31">
+                <div class="ott-flight g-clear">
+
+                    <div class="ott-labels">
+                        <span class="ott-label-a">08:31</span>
+                        <span class="ott-label-b"><i>1h35</i> Direct</span>
+                        <span class="ott-label-c">10:20</span>
+                        <span class="ott-label-d">KLM</span>
+                        <span class="ott-label-e"><i>KL1107</i></span>
+                    </div>
+                    <div class="ott-days">
+                        <span class="ott-day"><input value="0" type="radio" name="ott-departure-flights" class="ott-flight-radio"/></span>
+                        <span class="ott-day"><input value="1" type="radio" name="ott-departure-flights" class="ott-flight-radio" /></span>
+                        <span class="ott-day"><input value="2" type="radio" name="ott-departure-flights" class="ott-flight-radio" /></span>
+                        <span class="ott-day"><input value="3" type="radio" name="ott-departure-flights" class="ott-flight-radio" /></span>
+                        <span class="ott-day"><input value="4" type="radio" name="ott-departure-flights" class="ott-flight-radio" /></span>
+                        <span class="ott-day ott-day--selected"><input value="5"  type="radio" name="ott-departure-flights" class="ott-flight-radio" /></span>
+                        <span class="ott-day"><input value="6" type="radio" name="ott-departure-flights" class="ott-flight-radio" /></span>
+                    </div>
+
+                </div>
+                <div class="ott-flight-info"></div>
+                <button class="ott-collapse"></button>
+
+            </li>
+        </ul>
+
+</div>
+
+<div class="ott-connection">
+    <div class="ott-connection-header">
+        UHUUUUU 3
+    </div>
+
+    <ul class="ott-fares">
+        <li>FARES</li>
+        <li>FARES</li>
+        <li>FARES</li>
+        <li>FARES</li>
+        <li>FARES</li>
+        <li>FARES</li>
+        <li>FARES</li>
+        <li>FARES</li>
+    </ul>
+
+</div>
+
+<div class="ott-connection">
+    <div class="ott-connection-header">
+        UHUUUUU 4
+    </div>
+    <ul class="ott-fares">
+        <li>FARES</li>
+        <li>FARES</li>
+        <li>FARES</li>
+        <li>FARES</li>
+        <li>FARES</li>
+        <li>FARES</li>
+        <li>FARES</li>
+        <li>FARES</li>
+    </ul>
+</div>
+
+
+
+
+<!-- BOOK IT -->
+<hr class="g-forms-ruler" />
+
+<div class="g-forms-button-group g-clear ott-booking">
+
+    <button id="ott-book" class="g-btn g-btn-secondary g-forms-next" type="submit" data-ebt="http://www.klm.com/travel/nl_nl/apps/ebt/ebt_home.htm?goToPage=home_return&amp;c[0].os=AMS&amp;c[0].ds=JFK&amp;c[1].os=JFK&amp;c[1].ds=AMS">
+        <span>Beschikbaarheid <b class="g-klmicon" aria-hidden="true">&gt;</b></span>
+    </button>
+
+    <a href="#ott-mailform" class="js-ott-scroll-top">Nieuwe zoekactie starten ^</a>
+
+</div>
+
+
+
+
+
+
+<!-- OLD APP SETUP FOR STORING DATA -->
+<div class="ott-hidden">
+
+    <div id="ott-data-outbound">{&quot;AIRLINE&quot;:[&quot;KL1699.06:50_KL6127.11:25&quot;,&quot;KL1699.06:50_KL6127.11:26&quot;,&quot;KL1699.06:50_KL6127.11:27&quot;,&quot;KL1699.06:50_KL6127.11:28&quot;,&quot;KL1699.06:50_KL6127.11:29&quot;,&quot;KL1699.06:50_KL6127.11:30&quot;,&quot;KL1699.06:50_KL6127.11:31&quot;]}</div>
+    <div id="ott-data-inbound">{&quot;AIRLINE&quot;:[&quot;KL1699.06:50_KL6127.11:25&quot;,&quot;KL1699.06:50_KL6127.11:26&quot;,&quot;KL1699.06:50_KL6127.11:27&quot;,&quot;KL1699.06:50_KL6127.11:28&quot;,&quot;KL1699.06:50_KL6127.11:29&quot;,&quot;KL1699.06:50_KL6127.11:30&quot;,&quot;KL1699.06:50_KL6127.11:31&quot;]}</div>
+
+</div>

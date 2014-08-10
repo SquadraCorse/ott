@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>OTT DEMO</title>
+
+        <link rel="stylesheet" href="http://core.static-afkl.com/ams/frontend/css/core-en.css" />
+        <link rel="stylesheet" href="static/ott.css" />
+
+        <script src="http://core.static-afkl.com/ams/frontend/require-afkl.js"></script>
+
+        <script>
+            require.config({
+                paths: {
+                    'nls': 'http://core.static-afkl.com/travel/nl_en/static/nls', // ZIT IN TRIDION PAGINA
+                    'tc': 'http://www.klm.com/ams/tms/kl/web', // ZIT IN FREAK
+                    'apps/ott': 'static/js' // ZIT IN FREAK
+                }
+            });
+            window.countryCode = 'nl';
+            window.languageCode = 'nl';
+        </script>
+    
+    <style>
+
+        body {
+            padding: 0;
+            font-family: "Lucida Sans Unicode","Lucida Grande",verdana,arial,sans-serif;
+            font-size: 13px;
+        }
+        p { margin-bottom: 12px; }
+
+    </style>
+</head>
+<body>
+
+
+<!-- OTT: our start html -->
+<div class="g-grid--row">
+    <div class="g-grid--indent">
+        <div class="g-grid--span12">
+            <div id="ott-app" class="js-g-init g-loading-large" data-path="apps/ott/ott-app"></div>
+        </div>
+    </div>
+</div>
+
+<div class="g-grid--row">
+    <div class="g-grid--span12">
+        <div class="ott-wrapper"></div>
+    </div>
+</div>
+
+
+
+<script>
+    // DIT ZIT IN DE FREAK FOOTER
+    require(['v2/g-initcomponents'], function ($init) {
+        $init.components([{'className' : 'js-g-init'}]);
+    });
+
+</script>
+
+</body>
+</html>

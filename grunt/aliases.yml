@@ -1,0 +1,12 @@
+default:
+  - 'build'
+
+build:
+  - 'clean:all'
+  - 'jshint'
+  - 'requirejs'
+  - 'copy'
+  - 'compress'
+
+lint:
+  - 'jshint'
